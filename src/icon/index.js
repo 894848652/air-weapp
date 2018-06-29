@@ -1,6 +1,5 @@
 Component({
     externalClasses: ['air-class'],
-
     properties: {
         type: {
             type: String,

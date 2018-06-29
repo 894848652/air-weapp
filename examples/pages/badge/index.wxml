@@ -1,3 +1,12 @@
-<!--pages/badge/badge.wxml-->
+<!-- pages/badge/badge.wxml -->
 <air-panel title="一般用法"></air-panel>
-<air-badge content="badge" value="5" width="50"></air-badge>
+<air-badge content="badge" value="5"></air-badge>
+
+<air-panel title="改变背景颜色和字体颜色"></air-panel>
+<air-badge content="badge" value="55" bgcolor="#2d8cf0;" color="#000"></air-badge>
+
+<air-panel title="数字省略"></air-panel>
+<air-badge content="badge" value="99" isOmit="true"></air-badge>
+
+<air-panel title="设置容器宽度"></air-panel>
+<air-badge content="badge" value="5" width="200"></air-badge>

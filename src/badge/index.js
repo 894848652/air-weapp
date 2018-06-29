@@ -22,8 +22,12 @@ Component({
             value: 10
         },
         width: {
-            type: String,
-            value: 50
+            type: Number,
+            value: 60
+        },
+        isOmit: {
+            type: Boolean,
+            value: false
         }
     }
 });
