@@ -1,5 +1,5 @@
 <view class="air-as-mask air-class-mask {{visible ? 'air-as-mask-show': ''}}" bindtap="handleClickMask"></view>
-<view class="air-class air-as {{visible ? 'air-as-show': ''}}">
+<view class=" air-as {{visible ? 'air-as-show': ''}}">
     <view class="air-as-header air-class-header">
         <slot name="header"></slot>
     </view>

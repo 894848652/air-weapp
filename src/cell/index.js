@@ -58,16 +58,12 @@ Component({
                 linkType
             } = this.data;
             const type = typeof isLink;
-
             this.triggerEvent('click', {})
-
             if (!isLink || !url || url === 'true' || url === 'false') return;
-
             if (type !== 'boolean' && type !== 'string') {
                 warn('isLink 属性值必须是一个字符串或布尔值', isLink);
                 return;
             }
-
             if (['navigateTo', 'redirectTo', 'switchTab', 'reLaunch'].indexOf(linkType) === -1) {
                 warn('linkType 属性可选值为 navigateTo，redirectTo，switchTab，reLaunch', linkType);
                 return;

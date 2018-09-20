@@ -1,34 +1,29 @@
 Component({
     externalClasses: ['air-class'],
-
     relations: {
         '../cell/index': {
             type: 'child',
-            linked () {
+            linked() {
                 this._updateIsLastCell();
             },
-            linkChanged () {
+            linkChanged() {
                 this._updateIsLastCell();
             },
-            unlinked () {
+            unlinked() {
                 this._updateIsLastCell();
             }
         }
     },
-
     methods: {
         _updateIsLastCell() {
             let cells = this.getRelationNodes('../cell/index');;
             const len = cells.length;
-
-            if(len > 0) {
+            if (len > 0) {
                 let lastIndex = len - 1;
                 cells.forEach((cell, index) => {
                     cell.updateIsLastCell(index === lastIndex);
                 })
-                
             }
-
         }
     }
 })

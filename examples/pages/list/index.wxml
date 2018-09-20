@@ -35,7 +35,7 @@
                 <input slot="footer" type="digit" placeholder="带小数点的数字键盘"/>
             </air-cell>
         </block>
-        <air-cell title="开关">
+        <air-cell title="开关a">
             <air-switch checked="{{switch1}}" bind:change="onChange" slot="footer"></air-switch>
         </air-cell>
     </air-cell-group>
